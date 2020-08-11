@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+    {%if isFile%}
+   "{{isFile.files}}" uploaded on
+   {{isFile.date_posted.strftime('%Y-%m-%d')}}
+   {%else%}
+   <h2>sorry no such file</h2>
+   {%endif%}
+</div>
+{% endblock content %}

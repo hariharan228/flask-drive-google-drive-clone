@@ -1,0 +1,39 @@
+
+body { padding: 1rem; }
+
+.card {
+  background-color: snow;
+  color: black;
+  padding: 1rem;
+  
+  font-size: medium;
+
+  height: 150px;
+}
+.card > a{
+    padding: 10px;
+    width: 100px;
+    
+}
+.card #button{
+    float: left;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(1, 1fr); }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}
